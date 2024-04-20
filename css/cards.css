@@ -1,0 +1,54 @@
+
+.card {
+  filter: brightness(100%);
+  /* Disable the default underline for anchors from user-agent css */
+  text-decoration: none;
+  /* Ensure all cards take up the whole row height-wise, to prevent uneven heights across cards */
+  min-height: 100%;
+  min-width: 250px;
+  transition: all 0.2s ease;
+  filter: drop-shadow(5px 5px 4px #6b6b6b48);
+}
+
+.card > div {
+  /* Have the div within the card grow to the whole container */
+  flex: 1 1;
+}
+
+.card-icon {
+  width: 3em;
+}
+
+.card-footer {
+  border-top: none;
+}
+
+.card:hover, .card:focus {
+  transition: all 0.2s ease;
+  filter: drop-shadow(5px 5px 6px #6b6b6baa);
+}
+
+.card:active {
+  transition: all 0.2s ease;
+  filter: drop-shadow(5px 5px 4px #6b6b6b48);
+}
+
+.card-title {
+  font-size: larger;
+}
+
+.tag {
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tag:hover {
+  filter: brightness(90%);
+  transition: all 0.2s ease;
+}
+
+.tag:active {
+  filter: brightness(110%);
+  transition: all 0.2s ease;
+}

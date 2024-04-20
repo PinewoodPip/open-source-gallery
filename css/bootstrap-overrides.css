@@ -1,0 +1,26 @@
+
+/* Bootstrap icon class */
+.bi::before {
+  /* Bootstrap offsets these, presumably to make them appear bottom-anchored */
+  vertical-align: 0;
+  /* Icons are font glyphs, thus their size is controlled via font size */
+  font-size: larger;
+}
+
+.input-group {
+  flex-wrap: nowrap;
+}
+
+.dropdown-toggle {
+  text-align: left;
+}
+
+.dropdown-toggle::after {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+.dropdown-menu.show {
+  width: 100%;
+}

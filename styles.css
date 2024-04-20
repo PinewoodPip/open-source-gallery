@@ -1,0 +1,27 @@
+@import url("css/layouts.css");
+@import url("css/bootstrap-overrides.css");
+@import url("css/cards.css");
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow-y: auto;
+}
+
+body {
+  background-color: rgb(245, 245, 245); 
+}
+
+label {
+  font-weight: bold;
+  user-select: none;
+}
+
+span > img {
+  height: 1.5em;
+}
+
+.filtering-widget {
+  min-width: 220px !important;
+}
