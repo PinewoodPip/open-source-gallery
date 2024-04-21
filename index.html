@@ -23,19 +23,17 @@
   <body>
     <template id="card">
       <div class="card container-fluid p-0 m-1">
-        <div class="mx-0">
-          <div class="col-lg card-header justify-content-center align-items-center d-flex border-0">
-            <img :src="'/img/placeholder.png'" alt="" class="img card-icon" style="display: block;" />
-          </div>
-          <div class="col-lg card-block flex-centered-column justify-content-center p-3">
-            <a class="card-title" :href="`https://github.com/${repo.owner}/${repo.repo}`">{{ `${repo.owner}/${repo.repo}` }}</a>
-            <p class="card-text">{{ repo.description }}</p>
-          </div>
-          <div class="card-footer d-flex flex-wrap">
-            <!-- TODO bg color, link with urlparams -->
-            <a v-for="tag in $parent.getTags(repo)" @click="tag.type == 'language' ? $parent.selectSkill(tag.id) : $parent.selectTopic(tag.id)" class="tag border rounded px-2 py-1 m-1">{{ tag.id }}</a>
-          </div>
+        <div class="col-lg card-header justify-content-center align-items-center d-flex border-0">
+          <img :src="'/img/placeholder.png'" alt="" class="img card-icon" style="display: block;" />
         </div>
+        <div class="col-lg card-block flex-grow flex-centered-column justify-content-center p-3">
+          <a class="card-title" :href="`https://github.com/${repo.owner}/${repo.repo}`">{{ `${repo.owner}/${repo.repo}` }}</a>
+          <p class="card-text">{{ repo.description }}</p>
+        </div>
+        <footer class="card-footer d-flex flex-wrap">
+          <!-- TODO bg color, link with urlparams -->
+          <a v-for="tag in $parent.getTags(repo)" @click="tag.type == 'language' ? $parent.selectSkill(tag.id) : $parent.selectTopic(tag.id)" class="tag border rounded px-2 py-1 m-1">{{ tag.id }}</a>
+        </footer>
       </div>
     </template>
 
@@ -58,7 +56,7 @@
                   </span>
                 </div>
                 <!-- TODO indicate which properties can be searched, ex. name/desc -->
-                <input type="text" class="form-control filtering-widget" placeholder="Search" aria-label="Search">
+                <input v-model="searchQuery" type="text" class="form-control filtering-widget" placeholder="Search" aria-label="Search">
               </div>
             </div>
             <div class="m-1">
@@ -107,8 +105,10 @@
             </div>
           </div>
           <div class="container mb-4">
-            <div class="col-lg-4">
-              <card v-for="repo in getRepositories()" :repo="repo"></card>
+            <div class="row">
+              <div v-for="repo in getRepositories()" class="col-lg-4 my-1">
+                <card :repo="repo"></card>
+              </div>
             </div>
           </div>
         </div>
