@@ -28,11 +28,6 @@
   filter: drop-shadow(5px 5px 6px #6b6b6baa);
 }
 
-.card:active {
-  transition: all 0.2s ease;
-  filter: drop-shadow(5px 5px 4px #6b6b6b48);
-}
-
 .card-title {
   font-size: larger;
 }
@@ -41,6 +36,7 @@
   transition: all 0.2s ease;
   cursor: pointer;
   text-decoration: none;
+  user-select: none;
 }
 
 .tag:hover {

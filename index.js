@@ -11,6 +11,7 @@ const app = createApp({
         "C++",
         "Lua",
         "Vue",
+        "JavaScript",
       ],
       topics: [
         "Deep Learning",
@@ -44,6 +45,13 @@ const app = createApp({
           description: "Superset of Python focusing on performance and AI applications",
           languages: [],
           topics: ["Language", "Data Science", "AI"],
+        },
+        "chartjs/Chart.js": {
+          owner: "chartjs",
+          repo: "Chart.js",
+          description: "Simple HTML5 Charts using the <canvas> tag",
+          languages: ["JavaScript"],
+          topics: ["Data Science"],
         },
       },
     };
