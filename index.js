@@ -1,7 +1,7 @@
 
 import { createApp } from 'vue'
-import FooterComponent from './components/pageFooter.js'
-import CardComponent from './components/card.js'
+import FooterComponent from '/public/components/pageFooter.js'
+import CardComponent from '/public/components/card.js'
 
 const app = createApp({
   data() {
