@@ -1,7 +1,7 @@
 
 import { createApp } from 'vue'
-import FooterComponent from '/components/pageFooter.js'
-import StatContainerComponent from '/components/statContainer.js'
+import FooterComponent from './components/pageFooter.js'
+import StatContainerComponent from './components/statContainer.js'
 
 const app = createApp({
   data() {
