@@ -2,58 +2,48 @@
 import { createApp } from 'vue'
 import FooterComponent from '/public/components/pageFooter.js'
 import CardComponent from '/public/components/card.js'
+import repositories from "/src/repositories.json"
+
+const SKILLS = [
+  {name: "C/C++", css: "tag-cpp"},
+  {name: "C#", css: "tag-csharp"},
+  {name: "Lua", css: "tag-lua"},
+  {name: "Java", css: "tag-java"},
+  {name: "JavaScript", css: "tag-js"},
+  {name: "PHP", css: "tag-php"},
+  {name: "Python", css: "tag-python"},
+  {name: "Others", css: "tag-others"},
+]
+
+const TOPICS = [
+  {name: "Web", longName: "Web Development", css: "tag-web"},
+  {name: "Data Science", css: "tag-datascience"},
+  {name: "Modding", longName: "Games & Modding", css: "tag-modding"}, // TODO decide a good name for it
+  {name: "Machine Learning", longName: "Machine Learning & AI", css: "tag-machinelearning"},
+  {name: "App", longName: "Applications", css: "tag-app"},
+  {name: "Tool", longName: "Development Tools", css: "tag-tool"},
+  {name: "Resource", longName: "Learning Resources", css: "tag-resource"},
+]
+
+let nameToTopic = {}
+for (let i in TOPICS) {
+  nameToTopic[TOPICS[i].name] = TOPICS[i]
+}
+let nameToSkill = {}
+for (let i in SKILLS) {
+  nameToSkill[SKILLS[i].name] = SKILLS[i]
+}
 
 const app = createApp({
   data() {
     return {
       searchQuery: "",
-      skills: [
-        "C++",
-        "Lua",
-        "Vue",
-        "JavaScript",
-      ],
-      topics: [
-        "Deep Learning",
-        "Data Science",
-        "UI",
-        "Mod",
-        "AI",
-        "Language",
-      ],
+      skills: SKILLS,
+      topics: TOPICS,
       shownSkills: {},
       selectedTopic: "",
       selectedSkill: "",
-      repositories: {
-        "PinewoodPip/EpipEncounters": {
-          owner: "PinewoodPip",
-          repo: "EpipEncounters",
-          description: "test description",
-          languages: ["Lua"],
-          topics: ["Mod", "UI"]
-        },
-        "danny-avila/LibreChat": {
-          owner: "danny-avila",
-          repo: "LibreChat",
-          description: "Self-hostable LLM chat supporting multiple models",
-          languages: ["JavaScript"],
-          topics: ["AI"],
-        },
-        "modularml/mojo": {
-          owner: "modularml",
-          repo: "mojo",
-          description: "Superset of Python focusing on performance and AI applications",
-          languages: [],
-          topics: ["Language", "Data Science", "AI"],
-        },
-        "chartjs/Chart.js": {
-          owner: "chartjs",
-          repo: "Chart.js",
-          description: "Simple HTML5 Charts using the <canvas> tag",
-          languages: ["JavaScript"],
-          topics: ["Data Science"],
-        },
-      },
+      repositories: repositories,
     };
   },
   methods: {

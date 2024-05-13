@@ -68,7 +68,7 @@
                       <a class="dropdown-item" href="#" @click="selectSkill('')" >Any</a>
                     </li>
                     <li v-for="(skill, index) in skills">
-                      <a class="dropdown-item" href="#" @click="selectSkill(skill)" >{{ skill }}</a>
+                      <a class="dropdown-item" href="#" @click="selectSkill(skill.name)" >{{ skill.longName ? skill.longName : skill.name }}</a>
                     </li>
                   </ul>
                 </div>
@@ -90,7 +90,7 @@
                       <a class="dropdown-item" href="#" @click="selectTopic('')" >Any</a>
                     </li>
                     <li v-for="(topic, index) in topics" class="">
-                      <a class="dropdown-item" href="#" @click="selectTopic(topic)" >{{ topic }}</a>
+                      <a class="dropdown-item" href="#" @click="selectTopic(topic.name)" >{{ topic.longName ? topic.longName : topic.name }}</a>
                     </li>
                   </ul>
                 </div>

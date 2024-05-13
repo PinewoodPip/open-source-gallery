@@ -1,0 +1,1649 @@
+{
+  "freeCodeCamp/freeCodeCamp": {
+    "topics": [
+      "Web",
+      "Data Science",
+      "Resource"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn to code for free.",
+    "owner": "freeCodeCamp",
+    "repo": "freeCodeCamp"
+  },
+  "kubernetes/kubernetes": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "Production-Grade Container Scheduling and Management",
+    "owner": "kubernetes",
+    "repo": "kubernetes"
+  },
+  "tensorflow/tensorflow": {
+    "topics": [
+      "Machine Learning"
+    ],
+    "languages": [
+      "C/C++"
+    ],
+    "description": "An Open Source Machine Learning Framework for Everyone",
+    "owner": "tensorflow",
+    "repo": "tensorflow"
+  },
+  "pytorch/pytorch": {
+    "topics": [
+      "Data Science",
+      "Machine Learning"
+    ],
+    "languages": [
+      "Python"
+    ],
+    "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+    "owner": "pytorch",
+    "repo": "pytorch"
+  },
+  "scikit-learn/scikit-learn": {
+    "topics": [
+      "Data Science",
+      "Machine Learning"
+    ],
+    "languages": [
+      "Python"
+    ],
+    "description": "scikit-learn: machine learning in Python",
+    "owner": "scikit-learn",
+    "repo": "scikit-learn"
+  },
+  "ohmyzsh/ohmyzsh": {
+    "topics": [
+      "Tool",
+      "App"
+    ],
+    "languages": [],
+    "description": "\ud83d\ude43   A delightful community-driven (with 2,300+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool so that makes it easy to keep up with the latest updates from the community.",
+    "owner": "ohmyzsh",
+    "repo": "ohmyzsh"
+  },
+  "grafana/grafana": {
+    "topics": [
+      "Data Science"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more. ",
+    "owner": "grafana",
+    "repo": "grafana"
+  },
+  "moby/moby": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "The Moby Project - a collaborative project for the container ecosystem to assemble container-based systems",
+    "owner": "moby",
+    "repo": "moby"
+  },
+  "ant-design/ant-design": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "An enterprise-class UI design language and React UI library",
+    "owner": "ant-design",
+    "repo": "ant-design"
+  },
+  "angular/angular": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Deliver web apps with confidence \ud83d\ude80",
+    "owner": "angular",
+    "repo": "angular"
+  },
+  "opencv/opencv": {
+    "topics": [
+      "Machine Learning"
+    ],
+    "languages": [
+      "C/C++"
+    ],
+    "description": "Open Source Computer Vision Library",
+    "owner": "opencv",
+    "repo": "opencv"
+  },
+  "woocommerce/woocommerce": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "PHP"
+    ],
+    "description": "A customizable, open-source ecommerce platform built on WordPress. Build any commerce solution you can imagine.",
+    "owner": "woocommerce",
+    "repo": "woocommerce"
+  },
+  "neovim/neovim": {
+    "topics": [
+      "App"
+    ],
+    "languages": [],
+    "description": "Vim-fork focused on extensibility and usability",
+    "owner": "neovim",
+    "repo": "neovim"
+  },
+  "expo/expo": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "An open-source framework for making universal native apps with React. Expo runs on Android, iOS, and the web.",
+    "owner": "expo",
+    "repo": "expo"
+  },
+  "electron/electron": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "C/C++"
+    ],
+    "description": ":electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS",
+    "owner": "electron",
+    "repo": "electron"
+  },
+  "public-apis/public-apis": {
+    "topics": [
+      "Resource"
+    ],
+    "languages": [
+      "Python"
+    ],
+    "description": "A collective list of free APIs",
+    "owner": "public-apis",
+    "repo": "public-apis"
+  },
+  "supabase/supabase": {
+    "topics": [
+      "Data Science",
+      "Tool"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "The open source Firebase alternative.",
+    "owner": "supabase",
+    "repo": "supabase"
+  },
+  "typeorm/typeorm": {
+    "topics": [
+      "Tool",
+      "App"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "ORM for TypeScript and JavaScript. Supports MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, Oracle, SAP Hana, WebSQL databases. Works in NodeJS, Browser, Ionic, Cordova and Electron platforms.",
+    "owner": "typeorm",
+    "repo": "typeorm"
+  },
+  "curl/curl": {
+    "topics": [
+      "Web",
+      "Tool",
+      "App"
+    ],
+    "languages": [
+      "C/C++"
+    ],
+    "description": "A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS. libcurl offers a myriad of powerful features",
+    "owner": "curl",
+    "repo": "curl"
+  },
+  "mattermost/mattermost": {
+    "topics": [
+      "Web",
+      "Tool",
+      "App"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Mattermost is an open source platform for secure collaboration across the entire software development lifecycle..",
+    "owner": "mattermost",
+    "repo": "mattermost"
+  },
+  "strapi/strapi": {
+    "topics": [
+      "Data Science"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "\ud83d\ude80 Strapi is the leading open-source headless CMS. It\u2019s 100% JavaScript/TypeScript, fully customizable and developer-first.",
+    "owner": "strapi",
+    "repo": "strapi"
+  },
+  "zulip/zulip": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Python"
+    ],
+    "description": "Zulip server and web application. Open-source team chat that helps teams stay productive and focused.",
+    "owner": "zulip",
+    "repo": "zulip"
+  },
+  "traefik/traefik": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "The Cloud Native Application Proxy",
+    "owner": "traefik",
+    "repo": "traefik"
+  },
+  "meteor/meteor": {
+    "topics": [
+      "Web",
+      "Tool"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Meteor, the JavaScript App Platform",
+    "owner": "meteor",
+    "repo": "meteor"
+  },
+  "nuxt/nuxt": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "The Intuitive Vue Framework.",
+    "owner": "nuxt",
+    "repo": "nuxt"
+  },
+  "rclone/rclone": {
+    "topics": [
+      "App"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "\"rsync for cloud storage\" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files",
+    "owner": "rclone",
+    "repo": "rclone"
+  },
+  "prettier/prettier": {
+    "topics": [
+      "Web",
+      "Data Science"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Prettier is an opinionated code formatter.",
+    "owner": "prettier",
+    "repo": "prettier"
+  },
+  "ccxt/ccxt": {
+    "topics": [
+      "App"
+    ],
+    "languages": [
+      "Python"
+    ],
+    "description": "A JavaScript / TypeScript / Python / C# / PHP cryptocurrency trading API with support for more than 100 bitcoin/altcoin exchanges",
+    "owner": "ccxt",
+    "repo": "ccxt"
+  },
+  "element-plus/element-plus": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "\ud83c\udf89 A Vue.js 3 UI Library made by Element team",
+    "owner": "element-plus",
+    "repo": "element-plus"
+  },
+  "netdata/netdata": {
+    "topics": [
+      "Data Science",
+      "Machine Learning",
+      "Tool"
+    ],
+    "languages": [
+      "C/C++"
+    ],
+    "description": "The open-source observability platform everyone needs!",
+    "owner": "netdata",
+    "repo": "netdata"
+  },
+  "micropython/micropython": {
+    "topics": [],
+    "languages": [
+      "C/C++"
+    ],
+    "description": "MicroPython - a lean and efficient Python implementation for microcontrollers and constrained systems",
+    "owner": "micropython",
+    "repo": "micropython"
+  },
+  "localstack/localstack": {
+    "topics": [],
+    "languages": [
+      "Python"
+    ],
+    "description": "\ud83d\udcbb A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline",
+    "owner": "localstack",
+    "repo": "localstack"
+  },
+  "dokku/dokku": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [],
+    "description": "A docker-powered PaaS that helps you build and manage the lifecycle of applications",
+    "owner": "dokku",
+    "repo": "dokku"
+  },
+  "MinecraftForge/MinecraftForge": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "Java"
+    ],
+    "description": "Modifications to the Minecraft base files to assist in compatibility between mods. New Discord: https://discord.minecraftforge.net/",
+    "owner": "MinecraftForge",
+    "repo": "MinecraftForge"
+  },
+  "gogs/gogs": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "Gogs is a painless self-hosted Git service",
+    "owner": "gogs",
+    "repo": "gogs"
+  },
+  "cli/cli": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "GitHub\u2019s official command line tool",
+    "owner": "cli",
+    "repo": "cli"
+  },
+  "puppeteer/puppeteer": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Node.js API for Chrome ",
+    "owner": "puppeteer",
+    "repo": "puppeteer"
+  },
+  "mitmproxy/mitmproxy": {
+    "topics": [
+      "Web",
+      "Tool"
+    ],
+    "languages": [
+      "Python"
+    ],
+    "description": "An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers.",
+    "owner": "mitmproxy",
+    "repo": "mitmproxy"
+  },
+  "minio/minio": {
+    "topics": [
+      "Machine Learning",
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "The Object Store for AI Data Infrastructure",
+    "owner": "minio",
+    "repo": "minio"
+  },
+  "axios/axios": {
+    "topics": [],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Promise based HTTP client for the browser and node.js",
+    "owner": "axios",
+    "repo": "axios"
+  },
+  "react-native-elements/react-native-elements": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [],
+    "description": "Cross-Platform React Native UI Toolkit",
+    "owner": "react-native-elements",
+    "repo": "react-native-elements"
+  },
+  "gitextensions/gitextensions": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "C#"
+    ],
+    "description": "Git Extensions is a standalone UI tool for managing git repositories. It also integrates with Windows Explorer and Microsoft Visual Studio (2015/2017/2019).",
+    "owner": "gitextensions",
+    "repo": "gitextensions"
+  },
+  "goreleaser/goreleaser": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "Deliver Go binaries as fast and easily as possible",
+    "owner": "goreleaser",
+    "repo": "goreleaser"
+  },
+  "trpc/trpc": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "\ud83e\uddd9\u200d\u2640\ufe0f  Move Fast and Break Nothing. End-to-end typesafe APIs made easy. ",
+    "owner": "trpc",
+    "repo": "trpc"
+  },
+  "directus/directus": {
+    "topics": [
+      "Web",
+      "Data Science",
+      "Tool",
+      "App"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "The Modern Data Stack \ud83d\udc30 \u2014 Directus is an instant REST+GraphQL API and intuitive no-code data collaboration app for any SQL database.",
+    "owner": "directus",
+    "repo": "directus"
+  },
+  "Kong/kong": {
+    "topics": [
+      "Machine Learning",
+      "Tool"
+    ],
+    "languages": [
+      "Lua"
+    ],
+    "description": "\ud83e\udd8d The Cloud-Native API Gateway and AI Gateway.",
+    "owner": "Kong",
+    "repo": "kong"
+  },
+  "guzzle/guzzle": {
+    "topics": [
+      "Web",
+      "App"
+    ],
+    "languages": [
+      "PHP"
+    ],
+    "description": "Guzzle, an extensible PHP HTTP client",
+    "owner": "guzzle",
+    "repo": "guzzle"
+  },
+  "desktop/desktop": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Focus on what matters instead of fighting with Git.",
+    "owner": "desktop",
+    "repo": "desktop"
+  },
+  "appwrite/appwrite": {
+    "topics": [
+      "Web",
+      "Tool"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Your backend, minus the hassle.",
+    "owner": "appwrite",
+    "repo": "appwrite"
+  },
+  "lerna/lerna": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
+    "owner": "lerna",
+    "repo": "lerna"
+  },
+  "refined-github/refined-github": {
+    "topics": [
+      "Web",
+      "Tool"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": ":octocat: Browser extension that simplifies the GitHub interface and adds useful features",
+    "owner": "refined-github",
+    "repo": "refined-github"
+  },
+  "syncthing/syncthing": {
+    "topics": [
+      "App"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "Open Source Continuous File Synchronization",
+    "owner": "syncthing",
+    "repo": "syncthing"
+  },
+  "PCSX2/pcsx2": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "C/C++"
+    ],
+    "description": "PCSX2 - The Playstation 2 Emulator",
+    "owner": "PCSX2",
+    "repo": "pcsx2"
+  },
+  "paperless-ngx/paperless-ngx": {
+    "topics": [
+      "Machine Learning"
+    ],
+    "languages": [
+      "Python"
+    ],
+    "description": "A community-supported supercharged version of paperless: scan, index and archive all your physical documents",
+    "owner": "paperless-ngx",
+    "repo": "paperless-ngx"
+  },
+  "sst/sst": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Build modern full-stack applications on AWS",
+    "owner": "sst",
+    "repo": "sst"
+  },
+  "react-hook-form/react-hook-form": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "\ud83d\udccb React Hooks for form state management and validation (Web + React Native)",
+    "owner": "react-hook-form",
+    "repo": "react-hook-form"
+  },
+  "vercel/vercel": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Develop. Preview. Ship.",
+    "owner": "vercel",
+    "repo": "vercel"
+  },
+  "dbeaver/dbeaver": {
+    "topics": [
+      "Tool",
+      "App"
+    ],
+    "languages": [
+      "Java"
+    ],
+    "description": "Free universal database tool and SQL client",
+    "owner": "dbeaver",
+    "repo": "dbeaver"
+  },
+  "RPCS3/rpcs3": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "C/C++"
+    ],
+    "description": "PS3 emulator/debugger",
+    "owner": "RPCS3",
+    "repo": "rpcs3"
+  },
+  "ultralytics/ultralytics": {
+    "topics": [
+      "Machine Learning"
+    ],
+    "languages": [
+      "Python"
+    ],
+    "description": "NEW - YOLOv8 \ud83d\ude80 in PyTorch > ONNX > OpenVINO > CoreML > TFLite",
+    "owner": "ultralytics",
+    "repo": "ultralytics"
+  },
+  "excalidraw/excalidraw": {
+    "topics": [
+      "Tool",
+      "App"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Virtual whiteboard for sketching hand-drawn like diagrams",
+    "owner": "excalidraw",
+    "repo": "excalidraw"
+  },
+  "verdaccio/verdaccio": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "\ud83d\udce6\ud83d\udd10 A lightweight Node.js private proxy registry",
+    "owner": "verdaccio",
+    "repo": "verdaccio"
+  },
+  "nocodb/nocodb": {
+    "topics": [
+      "Tool",
+      "App"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "\ud83d\udd25 \ud83d\udd25 \ud83d\udd25 Open Source Airtable Alternative",
+    "owner": "nocodb",
+    "repo": "nocodb"
+  },
+  "logseq/logseq": {
+    "topics": [
+      "Tool",
+      "App"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "A privacy-first, open-source platform for knowledge management and collaboration. Download link:  http://github.com/logseq/logseq/releases. roadmap: http://trello.com/b/8txSM12G/roadmap",
+    "owner": "logseq",
+    "repo": "logseq"
+  },
+  "pnpm/pnpm": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Fast, disk space efficient package manager",
+    "owner": "pnpm",
+    "repo": "pnpm"
+  },
+  "rustdesk/rustdesk": {
+    "topics": [
+      "App"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "An open-source remote desktop, and alternative to TeamViewer.",
+    "owner": "rustdesk",
+    "repo": "rustdesk"
+  },
+  "chatwoot/chatwoot": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. \ud83d\udd25\ud83d\udcac",
+    "owner": "chatwoot",
+    "repo": "chatwoot"
+  },
+  "saleor/saleor": {
+    "topics": [
+      "Web",
+      "Data Science"
+    ],
+    "languages": [
+      "Python"
+    ],
+    "description": "Saleor Core: the high performance, composable, headless commerce API.",
+    "owner": "saleor",
+    "repo": "saleor"
+  },
+  "PrismLauncher/PrismLauncher": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "C/C++"
+    ],
+    "description": "A custom launcher for Minecraft that allows you to easily manage multiple installations of Minecraft at once (Fork of MultiMC)",
+    "owner": "PrismLauncher",
+    "repo": "PrismLauncher"
+  },
+  "vapor/vapor": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "\ud83d\udca7 A server-side Swift HTTP web framework.",
+    "owner": "vapor",
+    "repo": "vapor"
+  },
+  "go-git/go-git": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "A highly extensible Git implementation in pure Go.",
+    "owner": "go-git",
+    "repo": "go-git"
+  },
+  "hoppscotch/hoppscotch": {
+    "topics": [
+      "Web",
+      "Data Science",
+      "Tool"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "\ud83d\udc7d Open source API development ecosystem - https://hoppscotch.io",
+    "owner": "hoppscotch",
+    "repo": "hoppscotch"
+  },
+  "NativeScript/NativeScript": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "\u26a1 Empowering JavaScript with native platform APIs. \u2728 Best of all worlds (TypeScript, Swift, Objective C, Kotlin, Java). Use what you love \u2764\ufe0f Angular, Capacitor, Ionic, React, Solid, Svelte, Vue with: iOS (UIKit, SwiftUI), Android (View, Jetpack Compose), Dart (Flutter) and you name it compatible.",
+    "owner": "NativeScript",
+    "repo": "NativeScript"
+  },
+  "python-gitlab/python-gitlab": {
+    "topics": [],
+    "languages": [
+      "Python"
+    ],
+    "description": "A python wrapper for the GitLab API.",
+    "owner": "python-gitlab",
+    "repo": "python-gitlab"
+  },
+  "streamlit/streamlit": {
+    "topics": [
+      "Data Science",
+      "Machine Learning"
+    ],
+    "languages": [
+      "Python"
+    ],
+    "description": "Streamlit \u2014 A faster way to build and share data apps.",
+    "owner": "streamlit",
+    "repo": "streamlit"
+  },
+  "jasmine/jasmine": {
+    "topics": [],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Simple JavaScript testing framework for browsers and node.js",
+    "owner": "jasmine",
+    "repo": "jasmine"
+  },
+  "i18next/i18next": {
+    "topics": [],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": " i18next: learn once - translate everywhere",
+    "owner": "i18next",
+    "repo": "i18next"
+  },
+  "cuberite/cuberite": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "C/C++"
+    ],
+    "description": "A lightweight, fast and extensible game server for Minecraft",
+    "owner": "cuberite",
+    "repo": "cuberite"
+  },
+  "bigbluebutton/bigbluebutton": {
+    "topics": [
+      "Tool",
+      "App"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Complete open source web conferencing system.",
+    "owner": "bigbluebutton",
+    "repo": "bigbluebutton"
+  },
+  "danger/danger": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "\ud83d\udeab Stop saying \"you forgot to \u2026\" in code review (in Ruby)",
+    "owner": "danger",
+    "repo": "danger"
+  },
+  "react-navigation/react-navigation": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Routing and navigation for your React Native apps",
+    "owner": "react-navigation",
+    "repo": "react-navigation"
+  },
+  "Ryujinx/Ryujinx": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "C#"
+    ],
+    "description": "Experimental Nintendo Switch Emulator written in C#",
+    "owner": "Ryujinx",
+    "repo": "Ryujinx"
+  },
+  "ollama/ollama": {
+    "topics": [
+      "Machine Learning",
+      "App"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "Get up and running with Llama 3, Mistral, Gemma, and other large language models.",
+    "owner": "ollama",
+    "repo": "ollama"
+  },
+  "wp-cli/wp-cli": {
+    "topics": [
+      "Web",
+      "Tool"
+    ],
+    "languages": [
+      "PHP"
+    ],
+    "description": "\u2699\ufe0f WP-CLI framework",
+    "owner": "wp-cli",
+    "repo": "wp-cli"
+  },
+  "lando/lando": {
+    "topics": [
+      "Web",
+      "Tool"
+    ],
+    "languages": [],
+    "description": "A development tool for all your projects that is fast, easy, powerful and liberating",
+    "owner": "lando",
+    "repo": "lando"
+  },
+  "timber/timber": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "PHP"
+    ],
+    "description": "Create WordPress themes with beautiful OOP code and the Twig Template Engine",
+    "owner": "timber",
+    "repo": "timber"
+  },
+  "Unleash/unleash": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Open-source feature management solution built for developers.",
+    "owner": "Unleash",
+    "repo": "unleash"
+  },
+  "PostgREST/postgrest": {
+    "topics": [
+      "Web",
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "REST API for any Postgres database",
+    "owner": "PostgREST",
+    "repo": "postgrest"
+  },
+  "SheetJS/sheetjs": {
+    "topics": [
+      "Web",
+      "Tool"
+    ],
+    "languages": [],
+    "description": "\ud83d\udcd7 SheetJS Spreadsheet Data Toolkit -- New home https://git.sheetjs.com/SheetJS/sheetjs",
+    "owner": "SheetJS",
+    "repo": "sheetjs"
+  },
+  "PolyMC/PolyMC": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "C/C++"
+    ],
+    "description": "A custom launcher for Minecraft that allows you to easily manage multiple installations of Minecraft at once (Fork of MultiMC)",
+    "owner": "PolyMC",
+    "repo": "PolyMC"
+  },
+  "BuildCraft/BuildCraft": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "Java"
+    ],
+    "description": "BuildCraft",
+    "owner": "BuildCraft",
+    "repo": "BuildCraft"
+  },
+  "wandb/wandb": {
+    "topics": [
+      "Data Science",
+      "Machine Learning",
+      "Tool"
+    ],
+    "languages": [
+      "Python"
+    ],
+    "description": "\ud83d\udd25 A tool for visualizing and tracking your machine learning experiments. This repo contains the CLI and Python API.",
+    "owner": "wandb",
+    "repo": "wandb"
+  },
+  "meilisearch/meilisearch": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "A lightning-fast search API that fits effortlessly into your apps, websites, and workflow",
+    "owner": "meilisearch",
+    "repo": "meilisearch"
+  },
+  "lapce/lapce": {
+    "topics": [
+      "App"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "Lightning-fast and Powerful Code Editor written in Rust",
+    "owner": "lapce",
+    "repo": "lapce"
+  },
+  "nteract/nteract": {
+    "topics": [
+      "Web",
+      "Data Science"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "\ud83d\udcd8 The interactive computing suite for you!  \u2728",
+    "owner": "nteract",
+    "repo": "nteract"
+  },
+  "photoprism/photoprism": {
+    "topics": [
+      "Machine Learning"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "AI-Powered Photos App for the Decentralized Web \ud83c\udf08\ud83d\udc8e\u2728",
+    "owner": "photoprism",
+    "repo": "photoprism"
+  },
+  "filebrowser/filebrowser": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "\ud83d\udcc2 Web File Browser",
+    "owner": "filebrowser",
+    "repo": "filebrowser"
+  },
+  "marktext/marktext": {
+    "topics": [
+      "Web",
+      "App"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "\ud83d\udcddA simple and elegant markdown editor, available for Linux, macOS and Windows.",
+    "owner": "marktext",
+    "repo": "marktext"
+  },
+  "wp-graphql/wp-graphql": {
+    "topics": [
+      "Data Science"
+    ],
+    "languages": [
+      "PHP"
+    ],
+    "description": ":rocket: GraphQL API for WordPress",
+    "owner": "wp-graphql",
+    "repo": "wp-graphql"
+  },
+  "ag-grid/ag-grid": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "The best JavaScript Data Table for building Enterprise Applications. Supports React / Angular / Vue / Plain JavaScript.",
+    "owner": "ag-grid",
+    "repo": "ag-grid"
+  },
+  "Powerlevel9k/powerlevel9k": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [],
+    "description": "Powerlevel9k was a tool for building a beautiful and highly functional CLI, customized for you. P9k had a substantial impact on CLI UX, and its legacy is now continued by P10k.",
+    "owner": "Powerlevel9k",
+    "repo": "powerlevel9k"
+  },
+  "tflearn/tflearn": {
+    "topics": [
+      "Data Science",
+      "Machine Learning"
+    ],
+    "languages": [
+      "Python"
+    ],
+    "description": "Deep learning library featuring a higher-level API for TensorFlow.",
+    "owner": "tflearn",
+    "repo": "tflearn"
+  },
+  "sweetalert2/sweetalert2": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "\u2728 A beautiful, responsive, highly customizable and accessible (WAI-ARIA) replacement for JavaScript's popup boxes. Zero dependencies. \ud83c\uddfa\ud83c\udde6",
+    "owner": "sweetalert2",
+    "repo": "sweetalert2"
+  },
+  "node-fetch/node-fetch": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "A light-weight module that brings the Fetch API to Node.js",
+    "owner": "node-fetch",
+    "repo": "node-fetch"
+  },
+  "ZLMediaKit/ZLMediaKit": {
+    "topics": [
+      "Web",
+      "Tool"
+    ],
+    "languages": [
+      "C/C++"
+    ],
+    "description": "WebRTC/RTSP/RTMP/HTTP/HLS/HTTP-FLV/WebSocket-FLV/HTTP-TS/HTTP-fMP4/WebSocket-TS/WebSocket-fMP4/GB28181/SRT server and client framework based on C++11",
+    "owner": "ZLMediaKit",
+    "repo": "ZLMediaKit"
+  },
+  "Minestom/Minestom": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "Java"
+    ],
+    "description": "1.20.4 Lightweight Minecraft server",
+    "owner": "Minestom",
+    "repo": "Minestom"
+  },
+  "babashka/babashka": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "Native, fast starting Clojure interpreter for scripting",
+    "owner": "babashka",
+    "repo": "babashka"
+  },
+  "OnsenUI/OnsenUI": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Mobile app development framework and SDK using HTML5 and JavaScript. Create beautiful and performant cross-platform mobile apps. Based on Web Components, and provides bindings for Angular 1, 2, React and Vue.js.",
+    "owner": "OnsenUI",
+    "repo": "OnsenUI"
+  },
+  "TigerVNC/tigervnc": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "C/C++"
+    ],
+    "description": "High performance, multi-platform VNC client and server",
+    "owner": "TigerVNC",
+    "repo": "tigervnc"
+  },
+  "Vita3K/Vita3K": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "C/C++"
+    ],
+    "description": "Experimental PlayStation Vita emulator",
+    "owner": "Vita3K",
+    "repo": "Vita3K"
+  },
+  "DiscordSRV/DiscordSRV": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "Java"
+    ],
+    "description": "Discord bridging plugin for block game https://modrinth.com/plugin/discordsrv",
+    "owner": "DiscordSRV",
+    "repo": "DiscordSRV"
+  },
+  "surrealdb/surrealdb": {
+    "topics": [
+      "Web",
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "A scalable, distributed, collaborative, document-graph database, for the realtime web",
+    "owner": "surrealdb",
+    "repo": "surrealdb"
+  },
+  "cryptpad/cryptpad": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Collaborative office suite, end-to-end encrypted and open-source.",
+    "owner": "cryptpad",
+    "repo": "cryptpad"
+  },
+  "reviewdog/reviewdog": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "\ud83d\udc36 Automated code review tool integrated with any code analysis tools regardless of programming language",
+    "owner": "reviewdog",
+    "repo": "reviewdog"
+  },
+  "ViaVersion/ViaVersion": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "Java"
+    ],
+    "description": "Allows the connection of newer clients to older server versions for Minecraft servers.",
+    "owner": "ViaVersion",
+    "repo": "ViaVersion"
+  },
+  "release-it/release-it": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "\ud83d\ude80 Automate versioning and package publishing",
+    "owner": "release-it",
+    "repo": "release-it"
+  },
+  "yjs/yjs": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Shared data types for building collaborative software",
+    "owner": "yjs",
+    "repo": "yjs"
+  },
+  "OpenEmu/OpenEmu": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "\ud83d\udd79 Retro video game emulation for macOS",
+    "owner": "OpenEmu",
+    "repo": "OpenEmu"
+  },
+  "Laverna/laverna": {
+    "topics": [
+      "Tool",
+      "App"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Laverna is a JavaScript note taking application with Markdown editor and encryption support. Consider it like open source alternative to Evernote.",
+    "owner": "Laverna",
+    "repo": "laverna"
+  },
+  "YimMenu/YimMenu": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "C/C++"
+    ],
+    "description": "YimMenu, a GTA V menu protecting against a wide ranges of the public crashes and improving the overall experience.",
+    "owner": "YimMenu",
+    "repo": "YimMenu"
+  },
+  "LuckPerms/LuckPerms": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "Java"
+    ],
+    "description": "A permissions plugin for Minecraft servers.",
+    "owner": "LuckPerms",
+    "repo": "LuckPerms"
+  },
+  "bytebase/bytebase": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "The GitHub/GitLab for database DevOps. World's most advanced database DevOps and CI/CD for Developer, DBA and Platform Engineering teams.",
+    "owner": "bytebase",
+    "repo": "bytebase"
+  },
+  "prest/prest": {
+    "topics": [
+      "Tool",
+      "App"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "PostgreSQL \u2795 REST, low-code, simplify and accelerate development, \u26a1 instant, realtime, high-performance on any Postgres application, existing or new",
+    "owner": "prest",
+    "repo": "prest"
+  },
+  "valheimPlus/ValheimPlus": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "C#"
+    ],
+    "description": "A HarmonyX Mod aimed at improving the gameplay and quality of life of the game Valheim.",
+    "owner": "valheimPlus",
+    "repo": "ValheimPlus"
+  },
+  "aria2/aria2": {
+    "topics": [
+      "Web",
+      "App"
+    ],
+    "languages": [
+      "C/C++"
+    ],
+    "description": "aria2 is a lightweight multi-protocol & multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink.",
+    "owner": "aria2",
+    "repo": "aria2"
+  },
+  "LearnOpenGL-CN/LearnOpenGL-CN": {
+    "topics": [
+      "Resource"
+    ],
+    "languages": [],
+    "description": "http://learnopengl.com \u7cfb\u5217\u6559\u7a0b\u7684\u7b80\u4f53\u4e2d\u6587\u7ffb\u8bd1",
+    "owner": "LearnOpenGL-CN",
+    "repo": "LearnOpenGL-CN"
+  },
+  "berty/berty": {
+    "topics": [
+      "App"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "Berty is a secure peer-to-peer messaging app that works with or without internet access, cellular data or trust in the network",
+    "owner": "berty",
+    "repo": "berty"
+  },
+  "zincsearch/zincsearch": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "ZincSearch . A lightweight alternative to elasticsearch that requires minimal resources, written in Go.",
+    "owner": "zincsearch",
+    "repo": "zincsearch"
+  },
+  "php-curl-class/php-curl-class": {
+    "topics": [
+      "Web",
+      "App"
+    ],
+    "languages": [
+      "PHP"
+    ],
+    "description": "PHP Curl Class makes it easy to send HTTP requests and integrate with web APIs",
+    "owner": "php-curl-class",
+    "repo": "php-curl-class"
+  },
+  "corcel/corcel": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "PHP"
+    ],
+    "description": "Use WordPress backend with Laravel or any PHP application",
+    "owner": "corcel",
+    "repo": "corcel"
+  },
+  "pocketbase/pocketbase": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "Open Source realtime backend in 1 file",
+    "owner": "pocketbase",
+    "repo": "pocketbase"
+  },
+  "kubeshark/kubeshark": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "The API traffic analyzer for Kubernetes providing real-time K8s protocol-level visibility, capturing and monitoring all traffic and payloads going in, out and across containers, pods, nodes and clusters. Inspired by Wireshark, purposely built for Kubernetes",
+    "owner": "kubeshark",
+    "repo": "kubeshark"
+  },
+  "kbengine/kbengine": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "C/C++"
+    ],
+    "description": "A MMOG engine of server.",
+    "owner": "kbengine",
+    "repo": "kbengine"
+  },
+  "git-chglog/git-chglog": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "CHANGELOG generator implemented in Go (Golang).",
+    "owner": "git-chglog",
+    "repo": "git-chglog"
+  },
+  "notion-enhancer/notion-enhancer": {
+    "topics": [
+      "Web",
+      "Modding",
+      "App"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "An enhancer/customiser for the all-in-one productivity workspace Notion",
+    "owner": "notion-enhancer",
+    "repo": "notion-enhancer"
+  },
+  "cli-guidelines/cli-guidelines": {
+    "topics": [
+      "Resource"
+    ],
+    "languages": [],
+    "description": "A guide to help you write better command-line programs, taking traditional UNIX principles and updating them for the modern day.",
+    "owner": "cli-guidelines",
+    "repo": "cli-guidelines"
+  },
+  "matterpoll/matterpoll": {
+    "topics": [
+      "App"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "Create polls and surveys directly within Mattermost",
+    "owner": "matterpoll",
+    "repo": "matterpoll"
+  },
+  "community/community": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "Public feedback discussions for: GitHub Mobile, GitHub Discussions, GitHub Codespaces, GitHub Sponsors, GitHub Issues and more!",
+    "owner": "community",
+    "repo": "community"
+  },
+  "Aliucord/Aliucord": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "Java"
+    ],
+    "description": "A modification for the Discord Android App",
+    "owner": "Aliucord",
+    "repo": "Aliucord"
+  },
+  "BepInEx/BepInEx": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [
+      "C#"
+    ],
+    "description": "Unity / XNA game patcher and plugin framework",
+    "owner": "BepInEx",
+    "repo": "BepInEx"
+  },
+  "whalebrew/whalebrew": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "Homebrew, but with Docker images",
+    "owner": "whalebrew",
+    "repo": "whalebrew"
+  },
+  "Tuinity/Tuinity": {
+    "topics": [
+      "Modding"
+    ],
+    "languages": [],
+    "description": "Minecraft server software fork of Paper to improve performance without behavioural changes.",
+    "owner": "Tuinity",
+    "repo": "Tuinity"
+  },
+  "standup-raven/standup-raven": {
+    "topics": [
+      "App"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "A Mattermost plugin for communicating daily standups across teams",
+    "owner": "standup-raven",
+    "repo": "standup-raven"
+  },
+  "linkwarden/linkwarden": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "\u26a1\ufe0f\u26a1\ufe0f\u26a1\ufe0fSelf-hosted collaborative bookmark manager to collect, organize, and preserve webpages and articles.",
+    "owner": "linkwarden",
+    "repo": "linkwarden"
+  },
+  "cezerin/cezerin": {
+    "topics": [
+      "Web"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "Cezerin is React and Node.js based eCommerce platform.",
+    "owner": "cezerin",
+    "repo": "cezerin"
+  },
+  "ubicloud/ubicloud": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "Others"
+    ],
+    "description": "Open, free, and portable cloud. Elastic compute, block storage (non replicated), virtual networking, managed Postgres, and IAM services in public beta.",
+    "owner": "ubicloud",
+    "repo": "ubicloud"
+  },
+  "arxiv-vanity/arxiv-vanity": {
+    "topics": [
+      "App"
+    ],
+    "languages": [
+      "Python"
+    ],
+    "description": "Renders papers from arXiv as responsive web pages so you don't have to squint at a PDF.",
+    "owner": "arxiv-vanity",
+    "repo": "arxiv-vanity"
+  },
+  "notadd/notadd": {
+    "topics": [
+      "Tool"
+    ],
+    "languages": [
+      "JavaScript"
+    ],
+    "description": "A microservice development architecture based on nest.js. \u2014\u2014 \u57fa\u4e8e Nest.js \u7684\u5fae\u670d\u52a1\u5f00\u53d1\u67b6\u6784\u3002",
+    "owner": "notadd",
+    "repo": "notadd"
+  }
+}
