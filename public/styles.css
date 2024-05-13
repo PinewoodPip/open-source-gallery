@@ -1,6 +1,7 @@
 @import url("./layouts.css");
 @import url("./bootstrap-overrides.css");
 @import url("./cards.css");
+@import url("./tags.css");
 
 #app {
   width: 100vw;

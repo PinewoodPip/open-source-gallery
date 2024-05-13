@@ -25,13 +25,13 @@
         </div>
         <footer class="card-footer d-flex flex-wrap">
           <!-- TODO bg color, link with urlparams -->
-          <a v-for="tag in $parent.getTags(repo)" @click="tag.type == 'language' ? $parent.selectSkill(tag.id) : $parent.selectTopic(tag.id)" class="tag border rounded px-2 py-1 m-1">{{ tag.id }}</a>
+          <a v-for="tag in $parent.getTags(repo)" @click="tag.type == 'language' ? $parent.selectSkill(tag.id) : $parent.selectTopic(tag.id)" class="tag rounded px-2 py-1 m-1" :class="$parent.getTagClass(tag)" href="#top">{{ tag.id }}</a>
         </footer>
       </div>
     </template>
 
     <div id="app">
-      <div class="container p-0 d-flex flex-column">
+      <div id="top" class="container p-0 d-flex flex-column">
         <div class="container border rounded mt-5 mb-3 p-3">
           <h1 class="text-center py-2">Open-source GitHub project gallery</h1>
           <p>This page is a curated list of active open-source projects on GitHub that are open to contributions. You may filter the list by language, framework, or topic to find interesting projects.</p>

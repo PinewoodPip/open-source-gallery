@@ -1,0 +1,70 @@
+
+.tag {
+  --tag-opacity: 0.4;
+}
+
+/* Languages */
+
+.tag-cpp {
+  background: rgba(233, 201, 182, var(--tag-opacity));
+}
+
+.tag-csharp {
+  background: rgba(152, 162, 255, var(--tag-opacity));
+}
+
+.tag-lua {
+  background: rgba(159, 255, 255, var(--tag-opacity));
+}
+
+.tag-java {
+  background: rgba(255, 179, 149, var(--tag-opacity));
+}
+
+.tag-js {
+  background: rgba(255, 219, 152, var(--tag-opacity));
+}
+
+.tag-php {
+  background: rgba(184, 164, 255, var(--tag-opacity));
+}
+
+.tag-python {
+  background: rgba(248, 255, 145, var(--tag-opacity));
+}
+
+.tag-others {
+  background: rgba(192, 192, 192, var(--tag-opacity));
+}
+
+/* Topics */
+
+.tag-web {
+  background: rgba(161, 255, 255, var(--tag-opacity));
+}
+
+.tag-datascience {
+  background: rgba(249, 255, 161, var(--tag-opacity));
+}
+
+.tag-modding {
+  background: rgba(141, 158, 255, var(--tag-opacity));
+}
+
+.tag-machinelearning {
+  background: rgba(255, 192, 140, var(--tag-opacity));
+}
+
+.tag-app {
+  background: rgba(184, 255, 177, var(--tag-opacity));
+}
+
+.tag-tool {
+  background: rgba(255, 188, 191, var(--tag-opacity));
+}
+
+.tag-resource {
+  background: rgba(178, 255, 191, var(--tag-opacity));
+}
+
+

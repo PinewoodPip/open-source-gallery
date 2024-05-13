@@ -88,6 +88,14 @@ const app = createApp({
         }
       }
       return repos;
+    },
+    getTagData(id) {
+      return nameToSkill[id] ?? nameToTopic[id]
+    },
+    getTagClass(tag) {
+      let tagData = this.getTagData(tag.id);
+      let tagClass = tagData.css;
+      return {[tagClass]: true}
     }
   },
   components: {
