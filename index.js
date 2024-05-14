@@ -8,9 +8,10 @@ const SKILLS = [
   {name: "C/C++", css: "tag-cpp"},
   {name: "C#", css: "tag-csharp"},
   {name: "Lua", css: "tag-lua"},
-  {name: "Java", css: "tag-java"},
+  {name: "Java & Kotlin", css: "tag-java"},
   {name: "JavaScript", css: "tag-js"},
   {name: "PHP", css: "tag-php"},
+  {name: "Rust", css: "tag-rust"},
   {name: "Python", css: "tag-python"},
   {name: "Others", css: "tag-others"},
 ]
@@ -94,6 +95,10 @@ const app = createApp({
     },
     getTagClass(tag) {
       let tagData = this.getTagData(tag.id);
+      if (!tagData) {
+        console.log("No info for tag", tag)
+        return {}
+      }
       let tagClass = tagData.css;
       return {[tagClass]: true}
     }

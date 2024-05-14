@@ -29,6 +29,10 @@
   background: rgba(184, 164, 255, var(--tag-opacity));
 }
 
+.tag-rust {
+  background: rgb(255, 155, 155, var(--tag-opacity));
+}
+
 .tag-python {
   background: rgba(248, 255, 145, var(--tag-opacity));
 }

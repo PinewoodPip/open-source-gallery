@@ -17,7 +17,7 @@
     <template id="card">
       <div class="card container-fluid p-0 m-1">
         <div class="col-lg card-header justify-content-center align-items-center d-flex border-0">
-          <img :src="'./img/placeholder.png'" alt="" class="img card-icon" style="display: block;" />
+          <img :src="getRepositoryIcon()" alt="" class="img card-icon" style="display: block;" />
         </div>
         <div class="col-lg card-block flex-grow flex-centered-column justify-content-center p-3">
           <a class="card-title" :href="`https://github.com/${repo.owner}/${repo.repo}`">{{ `${repo.owner}/${repo.repo}` }}</a>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="dropdown">
                   <button class="btn btn-outline-secondary dropdown-toggle filtering-widget" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    {{ selectedSkill != '' ? selectedSkill : 'Languages/Frameworks' }}
+                    {{ selectedSkill != '' ? selectedSkill : 'Languages' }}
                   </button>
                   <ul class="dropdown-menu">
                     <li>
@@ -99,7 +99,7 @@
           </div>
           <div class="container mb-4">
             <div class="row">
-              <div v-for="repo in getRepositories()" class="col-lg-4 my-1">
+              <div v-for="repo in getRepositories()" class="col-xl-4 col-lg-6 my-1">
                 <card :repo="repo"></card>
               </div>
             </div>
