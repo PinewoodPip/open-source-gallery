@@ -26,3 +26,17 @@
   /* Necessary for settings dropdown to be wide enough */
   min-width: fit-content;
 }
+
+/* Make tooltips opaque, recolor BG */
+.tooltip.show {
+  opacity: 1.0;
+}
+
+.tooltip-inner {
+  background-color: grey;
+}
+
+.tooltip-arrow::before {
+  border-top-color: grey !important;
+  border-bottom-color: grey !important;
+}

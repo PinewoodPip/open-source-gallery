@@ -21,8 +21,9 @@
           <a class="card-title" :href="`https://github.com/${repo.owner}/${repo.repo}`">{{ `${repo.owner}`}}/<wbr>{{`${repo.repo}`}}</a>
           <div class="mx-auto"></div>
           <div class="display-flex flex-column card-repo-statistics ms-2">
-            <p><i class="bi bi-person"></i> {{ getSuffixedValue(repo.contributors) }}</p>
-            <p><i class="bi bi-star"></i> {{ getSuffixedValue(repo.stars) }}</p>
+            <p data-bs-toggle="tooltip" data-bs-placement="top" title="Contributors"><i class="bi bi-person"></i> {{ getSuffixedValue(repo.contributors) }}</p>
+            <!-- Display this tooltip at bottom so it doesn't obstruct the contributors count -->
+            <p data-bs-toggle="tooltip" data-bs-placement="bottom" title="Stars"><i class="bi bi-star"></i> {{ getSuffixedValue(repo.stars) }}</p>
           </div>
         </div>
         <div class="col-lg card-block flex-grow flex-centered-column p-3">
@@ -102,6 +103,7 @@
               </div>
             </div>
             <div class="m-1">
+              <div class="dropdown" data-bs-toggle="tooltip" data-bs-placement="top" title="Settings">
                 <button class="btn btn-outline-secondary dropdown-toggle settings-widget" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="bi bi-gear"></i>
                 </button>
