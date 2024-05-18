@@ -27,6 +27,11 @@ span > img {
   min-width: 220px !important;
 }
 
+.settings-widget::after {
+  /* Don't show the dropdown down arrow */
+  content: none;
+}
+
 canvas {
   max-height: 400px;
 }

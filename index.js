@@ -35,6 +35,12 @@ for (let i in SKILLS) {
   nameToSkill[SKILLS[i].name] = SKILLS[i]
 }
 
+const SORTING_MODES = [
+  "name",
+  "stars",
+  "contributors"
+]
+
 const app = createApp({
   data() {
     return {
@@ -44,6 +50,8 @@ const app = createApp({
       shownSkills: {},
       selectedTopic: "",
       selectedSkill: "",
+      sortingModes: SORTING_MODES,
+      sortingMode: "stars",
       repositories: repositories,
     };
   },
@@ -65,7 +73,7 @@ const app = createApp({
       return tags;
     },
     getRepositories() {
-      const repos = [];
+      let repos = [];
       const query = this.searchQuery.toLowerCase();
       for (let id in this.repositories) {
         let repo = this.repositories[id];
@@ -86,6 +94,27 @@ const app = createApp({
 
         if (passesQuery && passesLanguageFilter && passesTopicFilter) {
           repos.push(repo);
+        }
+      }
+      // Sort the repos based on settings
+      switch (this.sortingMode) {
+        case "name": {
+          repos.sort((a, b) => {
+            return a.repo.localeCompare(b.repo)
+          })
+          break;
+        }
+        case "stars": {
+          repos.sort((a, b) => {
+            return b.stars - a.stars
+          })
+          break;
+        }
+        case "contributors": {
+          repos.sort((a, b) => {
+            return b.contributors - a.contributors
+          })
+          break;
         }
       }
       return repos;

@@ -23,4 +23,6 @@
 
 .dropdown-menu.show {
   width: 100%;
+  /* Necessary for settings dropdown to be wide enough */
+  min-width: fit-content;
 }
