@@ -28,8 +28,21 @@
   filter: drop-shadow(5px 5px 6px #6b6b6baa);
 }
 
+.card-header {
+  flex-basis: unset;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  flex-grow: 0 !important;
+}
+
+.card-repo-statistics > p {
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
 .card-title {
   font-size: larger;
+  margin-bottom: 0 !important;
 }
 
 .tag {

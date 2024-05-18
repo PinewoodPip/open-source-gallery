@@ -16,11 +16,16 @@
   <body>
     <template id="card">
       <div class="card container-fluid p-0 m-1">
-        <div class="col-lg card-header justify-content-center align-items-center d-flex border-0">
-          <img :src="getRepositoryIcon()" alt="" class="img card-icon" style="display: block;" />
+        <div class="col-lg card-header justify-content-start align-items-center d-flex border-0 px-4">
+          <img :src="getRepositoryIcon()" alt="" class="img card-icon me-3" style="display: block;" />
+          <a class="card-title" :href="`https://github.com/${repo.owner}/${repo.repo}`">{{ `${repo.owner}`}}/<wbr>{{`${repo.repo}`}}</a>
+          <div class="mx-auto"></div>
+          <div class="display-flex flex-column card-repo-statistics ms-2">
+            <p><i class="bi bi-person"></i> {{ getSuffixedValue(repo.contributors) }}</p>
+            <p><i class="bi bi-star"></i> {{ getSuffixedValue(repo.stars) }}</p>
+          </div>
         </div>
-        <div class="col-lg card-block flex-grow flex-centered-column justify-content-center p-3">
-          <a class="card-title" :href="`https://github.com/${repo.owner}/${repo.repo}`">{{ `${repo.owner}/${repo.repo}` }}</a>
+        <div class="col-lg card-block flex-grow flex-centered-column p-3">
           <p class="card-text">{{ repo.description }}</p>
         </div>
         <footer class="card-footer d-flex flex-wrap">
