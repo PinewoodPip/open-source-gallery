@@ -53,14 +53,19 @@ const app = createApp({
       sortingModes: SORTING_MODES,
       sortingMode: "stars",
       repositories: repositories,
+      showAll: false,
+      totalResults: 0,
+      MAX_REPOSITORIES: 40,
     };
   },
   methods: {
     selectTopic(topic) {
       this.selectedTopic = topic;
+      this.showAll = false; // Limit results when settings change.
     },
     selectSkill(skill) {
       this.selectedSkill = skill;
+      this.showAll = false; // Limit results when settings change.
     },
     getTags(repo) {
       const tags = [];
@@ -95,6 +100,10 @@ const app = createApp({
         if (passesQuery && passesLanguageFilter && passesTopicFilter) {
           repos.push(repo);
         }
+      }
+      this.totalResults = repos.length;
+      if (!this.showAll) {
+        repos = repos.slice(0, this.MAX_REPOSITORIES);
       }
       // Sort the repos based on settings
       switch (this.sortingMode) {
@@ -132,9 +141,21 @@ const app = createApp({
       return {[tagClass]: true}
     }
   },
+  watch: {
+    searchQuery() {
+      this.showAll = false; // Limit results when search query changes.
+    }
+  },
   components: {
     "card": CardComponent,
     "pagefooter": FooterComponent,
   },
+  mounted() {
+    // Initialize tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  }
 });
 app.mount("#app");

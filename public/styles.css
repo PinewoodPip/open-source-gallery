@@ -32,6 +32,11 @@ span > img {
   content: none;
 }
 
+.btn-show-all {
+  max-width: 200px;
+  height: 50px;
+}
+
 canvas {
   max-height: 400px;
 }
