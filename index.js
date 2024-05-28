@@ -5,25 +5,25 @@ import CardComponent from '/public/components/card.js'
 import repositories from "/src/repositories.json"
 
 const SKILLS = [
-  {name: "C/C++", css: "tag-cpp"},
-  {name: "C#", css: "tag-csharp"},
-  {name: "Lua", css: "tag-lua"},
-  {name: "Java & Kotlin", css: "tag-java"},
-  {name: "JavaScript", css: "tag-js"},
-  {name: "PHP", css: "tag-php"},
-  {name: "Rust", css: "tag-rust"},
-  {name: "Python", css: "tag-python"},
-  {name: "Others", css: "tag-others"},
+  {name: "C/C++", css: "tag-cpp", color: [233, 201, 182]},
+  {name: "C#", css: "tag-csharp", color: [152, 162, 255]},
+  {name: "Lua", css: "tag-lua", color: [159, 255, 255]},
+  {name: "Java & Kotlin", css: "tag-java", color: [255, 179, 149]},
+  {name: "JavaScript", css: "tag-js", color: [255, 219, 152]},
+  {name: "PHP", css: "tag-php", color: [184, 164, 255]},
+  {name: "Rust", css: "tag-rust", color: [255, 155, 155]},
+  {name: "Python", css: "tag-python", color: [248, 255, 145]},
+  {name: "Others", css: "tag-others", color: [192, 192, 192]},
 ]
 
 const TOPICS = [
-  {name: "Web", longName: "Web Development", css: "tag-web"},
-  {name: "Data Science", css: "tag-datascience"},
-  {name: "Modding", longName: "Games & Modding", css: "tag-modding"}, // TODO decide a good name for it
-  {name: "Machine Learning", longName: "Machine Learning & AI", css: "tag-machinelearning"},
-  {name: "App", longName: "Applications", css: "tag-app"},
-  {name: "Tool", longName: "Development Tools", css: "tag-tool"},
-  {name: "Resource", longName: "Learning Resources", css: "tag-resource"},
+  {name: "Web", longName: "Web Development", css: "tag-web", color: [161, 255, 255]},
+  {name: "Data Science", css: "tag-datascience", color: [249, 255, 161]},
+  {name: "Modding", longName: "Games & Modding", css: "tag-modding", color: [141, 158, 255]}, // TODO decide a good name for it
+  {name: "Machine Learning", longName: "Machine Learning & AI", css: "tag-machinelearning", color: [255, 192, 140]},
+  {name: "App", longName: "Applications", css: "tag-app", color: [184, 255, 177]},
+  {name: "Tool", longName: "Development Tools", css: "tag-tool", color: [255, 188, 191]},
+  {name: "Resource", longName: "Learning Resources", css: "tag-resource", color: [178, 255, 191]},
 ]
 
 let nameToTopic = {}
@@ -139,6 +139,26 @@ const app = createApp({
       }
       let tagClass = tagData.css;
       return {[tagClass]: true}
+    },
+    getTagStyle(tag) {
+      let tagData = this.getTagData(tag.id);
+      if (!tagData) {
+        console.log("No info for tag", tag)
+        return {}
+      }
+      return {'background': `rgba(${tagData.color[0]}, ${tagData.color[1]}, ${tagData.color[2]}, var(--tag-opacity))`}
+    },
+    getRepoHeaderStyle(repo) {
+      let tags = this.getTags(repo)
+      let color = [0, 0, 0]
+      for (let i in tags) {
+        let data = this.getTagData(tags[i].id)
+        if (data) {
+          color = [color[0] + data.color[0], color[1] + data.color[1], color[2] + data.color[2]]
+        }
+      }
+      color = [color[0] / tags.length, color[1] / tags.length, color[2] / tags.length]
+      return {'background': `rgba(${color[0]}, ${color[1]}, ${color[2]}, var(--bg-color-opacity))`}
     }
   },
   watch: {
