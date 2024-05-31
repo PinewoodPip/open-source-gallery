@@ -1,3 +1,4 @@
+import ColorThief from 'ColorThief'
 
 export default {
   data() {
