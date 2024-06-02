@@ -40,3 +40,7 @@ span > img {
 canvas {
   max-height: 400px;
 }
+
+.info-container {
+  max-width: 700px;
+}

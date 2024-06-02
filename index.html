@@ -39,15 +39,31 @@
 
     <div id="app">
       <div id="top" class="container p-0 d-flex flex-column">
-        <div class="container border rounded mt-5 mb-3 p-3">
-          <h1 class="text-center py-2">Open-source GitHub project gallery</h1>
-          <p>This page is a curated list of active open-source projects on GitHub that are open to contributions. You may filter the list by language, framework, or topic to find interesting projects.</p>
-          <p>Repositories shown here were found via web crawling trending pages on GitHub, filtered to active projects and later manually reviewed to be included here.</p>
-          <p>During this data collection process, we've also gathered various general statistics about the most popular languages, frameworks and topics; if you're curious about current trends, check them out <a href="./statistics.html">here.</a></p>
+        <div class="container mt-5 mb-3 p-3">
+          <div class="info-container mx-auto">
+            <h1 class="text-center py-2">GitHub Open-Source Project Gallery</h1>
+            <p>This page offers a list of open-source projects on GitHub that are open to contributions.<br>You may filter the list by language, framework, or topic to find interesting projects.</p>
+            <p>Although GitHub itself offers ways of exploring repositories, their rankings appear to be based entirely around stars and a large amount of the featured repositories are not contributable. This page seeks to offer an alternative way to explore open-source projects to help with or use.<br>We also feature repositories that serve as learning resources.</p>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    How was the data collected?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Repositories shown here were found via web crawling trending pages on GitHub, then filtered to include only projects with multiple contributors and overall collaboration activity (ex. high usage of issues).</p>
+                    <p>During this data collection process, we've also gathered various statistics about GitHub usage - you can check them out <a href="./statistics.html">here.</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="container border rounded my-3">
-          <div class="d-flex justify-content-center flex-wrap p-3">
+        <div class="container my-3">
+          <div class="d-flex justify-content-center flex-wrap">
             <div class="m-1">
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
