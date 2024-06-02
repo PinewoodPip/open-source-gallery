@@ -16,6 +16,10 @@ export default {
     getRepositoryIcon() {
       return this.repo.icon ?? ""
     },
+    initializeTooltips() {
+      new bootstrap.Tooltip(this.$refs.starsTooltip);
+      new bootstrap.Tooltip(this.$refs.contributorsTooltip);
+    }
   },
   computed: {
     headerStyle() {
@@ -40,6 +44,7 @@ export default {
         }.bind(this));
       }
     } catch {}
+    this.initializeTooltips();
   },
   props: ["repo"],
   template: "#card",
