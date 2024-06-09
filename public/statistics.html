@@ -26,32 +26,111 @@
       <div class="container mb-4">
         <h2 class="text-center my-4">{{ header }}</h2>
         <div class="row p-2">
-          <div class="col-xl">
-            <p>{{ description }}</p>
-          </div>
-          <!-- TODO fix responsiveness -->
-          <div class="col-xl position-relative flex-centered-column">
-            <canvas :id="canvasId" class=""></canvas>
-          </div>
+          <slot name="description"></slot>
+          <slot name="chart"></slot>
         </div>
       </div>
     </template>
-    <div id="app">
+    <div id="app" class="stats-page">
       <div class="container p-0 d-flex flex-column">
         <div class="container mt-5 mb-3 p-3">
           <h1 class="text-center py-2">GitHub Statistics</h1>
           <div class="info-container mx-auto">
-            <p>This page compiles various statistics gathered from web-crawling thousands of GitHub repositories.</p>
+            <p>This page compiles various statistics and insights gathered from web-crawling thousands of GitHub repositories.</p>
             <p>For more information on the project and a searchable index of interesting open-source projects, <a href="./index.html">check out the main page.</a></p>
           </div>
         </div>
 
         <div class="container border rounded my-3">
-          <statcontainer :canvas-id="'testchart1'" :header="'Placeholder statistic'" :description="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat euismod varius. Duis efficitur tellus eget elit dapibus lacinia. Fusce venenatis tellus in fringilla dapibus. Nullam bibendum quam mauris, eu tempus diam tincidunt eget. Quisque eget ipsum at elit accumsan ultricies at rhoncus metus. Ut congue, ipsum eu efficitur molestie, tortor lorem eleifend tellus, imperdiet auctor ligula augue a quam. Sed in eros non tellus blandit volutpat a ac dolor. Praesent consequat tristique leo, condimentum tempus felis pharetra eu.'"></statcontainer>
+          <statcontainer :header="'Most-used languages'">
+            <template #description>
+              <p>As expected, web projects dominate the charts, with the sum of JavaScript & TypeScript repositories being almost 4x higher than the count of the third most popular language - that being Go, also popular in web development, and having just slightly more repositories in our dataset than Python.</p>
+              <p>Shell scripts remain in high usage for automating all sorts development & build processes, now via CI services like GitHub Actions.</p>
+            </template>
+            <template #chart>
+              <canvas id="languages"></canvas>
+            </template>
+          </statcontainer>
         </div>
 
+        <!-- Topics -->
         <div class="container border rounded my-3">
-          <statcontainer :canvas-id="'testchart2'" :header="'Placeholder statistic'" :description="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat euismod varius. Duis efficitur tellus eget elit dapibus lacinia. Fusce venenatis tellus in fringilla dapibus. Nullam bibendum quam mauris, eu tempus diam tincidunt eget. Quisque eget ipsum at elit accumsan ultricies at rhoncus metus. Ut congue, ipsum eu efficitur molestie, tortor lorem eleifend tellus, imperdiet auctor ligula augue a quam. Sed in eros non tellus blandit volutpat a ac dolor. Praesent consequat tristique leo, condimentum tempus felis pharetra eu.'"></statcontainer>
+          <statcontainer :canvas-id="'topics'" :header="'Most-used topics/tags'">
+            <template #description>
+              <p>The Hacktober tag is the most used one across all our collected repositories; it refers to an <a href="https://hacktoberfest.com/about/">annual event organized by DigitalOcean</a> where contributors to repositories tagged with it can win all sorts of goodies, promoting open-source collaboration.</p>
+              <p>Topics related to web development like frameworks are the next most used-tags, as expected from the prior analysis of most-used languages.</p>
+              <p>Projects that use Docker images for reliable deployments are aplenty, and we can see that the machine learning & deep learning trend also has enough repositories to make it to the top 20 - though it appears our dataset has fewer of those than Minecraft modding projects, somehow.</p>
+            </template>
+            <template #chart>
+              <canvas id="topics"></canvas>
+            </template>
+          </statcontainer>
+        </div>
+
+        <!-- Commit messages wordcloud -->
+        <div class="container border rounded my-3">
+          <statcontainer :canvas-id="'topics'" :header="'Commit Messages'">
+            <template #description>
+              <p>While gathering data of the repositories, we also took their most recent commit messages to study how they're written.</p>
+              <p>The first thing that came to our mind was of course to make a wordcloud out of all 60k commit messages we had gathered - having filtered out bot messages and default ones like "Merge Pull Request":</p>
+
+              <img src="./img/github_word_cloud.png" class="stats-img mx-auto mb-3"></img>
+
+              <p>Some keywords like "Add", "Update", "Fix" stick out quite clearly, but to get a clearer look at the top words we need to go back to a table:</p>
+
+              <img src="./img/top_words.png" class="stats-img mx-auto mb-3"></img>
+
+              <p>We can clearly see that there's some words that are very standard among developers. Upon a closer look, these are also very unique in regards to semantic meaning in software development, with almost no ambiguity:</p>
+
+              <p>Words related to development cycle:</p>
+              <ul>
+                <li>Add: adding features.</li>
+                <li>Fix: fixing bugs or issues.</li>
+                <li>Update: changing existing functionalities or resources.</li>
+                <li>Remove: often used in refactorings or removals of obsolete code.</li>
+                <li>Use: refers to using implementations or libraries.</li>
+                <li>Test: used in test-driven development, ex. when adding tests.</li>
+                <li>Readme: for updates to the documentation.</li>
+                <li>Feat: short for "feature", similar use to "add"</li>
+              </ul>
+
+              <p>Words related to maintenance:</p>
+              <ul>
+                <li>Chore: maintenance tasks, usually periodic and predictable.</li>
+                <li>Version: for marking new releases.</li>
+                <li>File: for denoting changes that deal with whole files, ex. renaming.</li>
+                <li>Refactor: adjustments to existing code to improve maintainability or performance.</li>
+                <li>Improve: general keyword for improvements to existing features.</li>
+              </ul>
+
+              <p>When in doubt on which single word to center a commit message around, the previous list is a great reference. From how common they are among developers, you can be sure that your commit's overall intent will be clear if you use them.</p>
+
+              <hr/>
+
+              <p>Our intent when gathering this data was to identify common writing styles - for that, we had to get more elaborate. We decided to perform two types of analysis on the commit messages:</p>
+              <ul>
+                <li><b>Frequent items</b>: pairs & triplets of words that appear commonly within the messages</li>
+                <li><b>Lexical analysis</b>: the proportion of nouns, verbs & adjectives in the messages, as well as distribution of verbal tenses</li>
+              </ul>
+              
+              <h2>Frequent items</h2>
+              <p>Using the apriori algorithm, we were able to determine the most common pairs of words within commits:</p>
+
+              <img src="./img/word_sets.png" class="stats-img mx-auto mb-3"></img>
+
+              <p>These are unfortunately much less varied than we expected; they largely consist of pairings of words to denote documentation/readme updates as well as fixing issues (bugs, typos, errors). This does however indicate that messages to denote those 2 kinds of commits are fairly standardized.</p>
+
+              <p>And here's a distribution of all lexical categories that <a href="https://www.nltk.org/">NLTK</a> recognizes:</p>
+
+              <img src="./img/lexical_distribution.png" class="stats-img mx-auto mb-3"></img>
+
+              <p>Nouns are dominant as expected, however it's important to note the preference for singular forms. The use of parenthesis is also common to clarify details within a commit. Orthotropes (#) are also commonly used to reference issues or pull requests by their number.</p>
+
+              <p>The average commit is only 6 words. From all this we can conclude that short & concise commit messages are preferred, using just 1 verb at the start to immediately communicate the commit's purpose, followed by nouns to detail what exactly changed.</p>
+            </template>
+            <template #chart>
+            </template>
+          </statcontainer>
         </div>
 
         <!-- Moves footer to bottom of viewport -->

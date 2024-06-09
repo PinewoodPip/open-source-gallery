@@ -37,10 +37,18 @@ span > img {
   height: 50px;
 }
 
-canvas {
-  max-height: 400px;
-}
-
 .info-container {
   max-width: 700px;
+}
+
+.stats-img {
+  max-width: 600px;
+}
+
+.stats-page > .container {
+  max-width: 900px;
+}
+
+ul {
+  margin-left: 25px;
 }
