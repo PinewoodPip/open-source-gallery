@@ -78,7 +78,7 @@
 
               <p>Some keywords like "Add", "Update", "Fix" stick out quite clearly, but to get a clearer look at the top words we need to go back to a table:</p>
 
-              <img src="./img/top_words.png" class="stats-img mx-auto mb-3"></img>
+              <canvas id="words"></canvas>
 
               <p>We can clearly see that there's some words that are very standard among developers. Upon a closer look, these are also very unique in regards to semantic meaning in software development, with almost no ambiguity:</p>
 
@@ -120,13 +120,19 @@
 
               <p>These are unfortunately much less varied than we expected; they largely consist of pairings of words to denote documentation/readme updates as well as fixing issues (bugs, typos, errors). This does however indicate that messages to denote those 2 kinds of commits are fairly standardized.</p>
 
-              <p>And here's a distribution of all lexical categories that <a href="https://www.nltk.org/">NLTK</a> recognizes:</p>
+              <p>We afterwards did a lexical analysis of the commits; here's a distribution of all the categories that <a href="https://www.nltk.org/">NLTK</a> recognizes:</p>
 
-              <img src="./img/lexical_distribution.png" class="stats-img mx-auto mb-3"></img>
+              <canvas id="lexical"></canvas>
 
-              <p>Nouns are dominant as expected, however it's important to note the preference for singular forms. The use of parenthesis is also common to clarify details within a commit. Orthotropes (#) are also commonly used to reference issues or pull requests by their number.</p>
+              <p>Nouns are dominant as expected, however it's important to note the preference for singular forms. The use of parenthesis is also common to clarify details within a commit. Orthotropes (#) are also commonly used to reference issues or pull requests by their number, hence why "cardinal number" is so high up.</p>
 
-              <p>The average commit is only 6 words. From all this we can conclude that short & concise commit messages are preferred, using just 1 verb at the start to immediately communicate the commit's purpose, followed by nouns to detail what exactly changed.</p>
+              <p>And here's the distribution for verb tenses used:</p>
+              
+              <canvas id="verbs"></canvas>
+
+              <p>The base form is the most used one. Gerund (<i>-ing</i>) sees a lot of use, however not as the main verb in a commit, but rather as a subject - ex. "Fixes #36: <i>querying</i> data using Select and Model". Other verb tenses are used in quite an equiprobable distribution. As such, you should largely base your choice of verb tense according to what's already the standard in your repository, or use the base form if in doubt.</p>
+
+              <p>The average commit is only 6 words. From all this we can conclude that short & concise commit messages are preferred, using just 1 verb at the start to immediately communicate the commit's purpose, followed by nouns to detail what exactly changed, and details or references to issues/PRs using parenthesis and #, if applicable.</p>
             </template>
             <template #chart>
             </template>
