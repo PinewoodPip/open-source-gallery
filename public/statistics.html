@@ -76,7 +76,7 @@
 
               <img src="./img/github_word_cloud.png" class="stats-img mx-auto mb-3"></img>
 
-              <p>Some keywords like "Add", "Update", "Fix" stick out quite clearly, but to get a clearer look at the top words we need to go back to a table:</p>
+              <p>Some keywords like "Add", "Update", "Fix" stick out quite clearly, but to get a clearer look at the top words we need to go back to a chart:</p>
 
               <canvas id="words"></canvas>
 
@@ -116,9 +116,16 @@
               <h2>Frequent items</h2>
               <p>Using the apriori algorithm, we were able to determine the most common pairs of words within commits:</p>
 
-              <img src="./img/word_sets.png" class="stats-img mx-auto mb-3"></img>
+              <img src="./img/word_sets.png" class="stats-img mx-auto mb-3" style="height: 600px; width: 420px"></img>
 
               <p>These are unfortunately much less varied than we expected; they largely consist of pairings of words to denote documentation/readme updates as well as fixing issues (bugs, typos, errors). This does however indicate that messages to denote those 2 kinds of commits are fairly standardized.</p>
+
+              <p>This can however be made a bit useful if given a more visual form: if we take one of the key central words we identified previously, we can make a graph that works as a quick reference of other common words to follow it up with:</p>
+
+              <img src="./img/freq_items_add.png" class="stats-img mx-auto mb-3"></img>
+              <img src="./img/freq_items_fix.png" class="stats-img mx-auto mb-3"></img>
+
+              <p>This lets us see much more clearly how varied the use of "add" is; it's used for, well, <i>adding</i> anything from features to documentation. Similarly we can see the things commits tend to fix: issues, typos, tests, and links in documentation (surprising for that one to be so common).</p>
 
               <p>We afterwards did a lexical analysis of the commits; here's a distribution of all the categories that <a href="https://www.nltk.org/">NLTK</a> recognizes:</p>
 
